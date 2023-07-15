@@ -833,63 +833,54 @@ body {
 
 /* Section: About */
 
+.about_container {
+  display: flex;
+  height: 430px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
 .profile-pic img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 20px;
   border-radius: 50%;
   width: 500px;
   float: left;
 }
 
-.section-about .col-sm-3 {
-  min-height: 250px;
-}
-
-.section-about .rectangle {
-  margin: 1px auto 10px;
-}
-
-.section-about .rectangle i {
-  font-size: 28px;
-}
-
-.feature-about h3 {
-  margin: 50px 0 0;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .feature-about p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
   max-width: 500px
 }
 
-@media only screen and (max-width: 767px) {
-  .section-about .row {
-    margin-top: 30px;
-  }
-
-  .section-about .col-xs-6:nth-child(n+3) .feature-about {
-    margin-top: 20px;
-  }
-
-  .section-about .feature-about h3 {
-    margin-top: 30px;
-  }
-
-  .section-about .feature-about p {
-    margin-top: 15px;
-  }
+.subh3 {
+  font: caption;
+  font-family: Lato;
+  font-size: 200%;
 }
 
-@media only screen and (max-width: 479px) {
-  .section-about .col-xs-6 {
-    width: 100%;
-    min-height: 100%;
-  }
+.about-text h2 {
+  font-size: 250%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  .section-about .col-xs-6:nth-child(n+2) .feature-about {
-    margin-top: 20px;
-  }
+.about-text p {
+  text-align: justify;
+  font-family: Lato;
+  font-size: 140%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 50px;
+  border-radius: 50%;
 }
 
 /* Section: Skills */
@@ -2160,6 +2151,16 @@ body {
 }
 
 /* Sections background: Quote */
+.section-quote1 {
+  background: url(../img/CC.jpg) center no-repeat fixed;
+}
+
+.section-quote1 p {
+  margin-top: 0;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .section-quote {
   background: url(../img/AI.jpg) center no-repeat fixed;
 }
