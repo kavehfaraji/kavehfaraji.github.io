@@ -624,7 +624,7 @@ body {
  * Sections
  */
 .site-section {
-  padding: 100px 0;
+  padding: 136px 0;
 }
 
 .site-section h2 {
@@ -832,8 +832,12 @@ body {
 }
 
 /* Section: About */
-.section-about .row {
-  margin-top: 70px;
+
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 500px;
+  float: left;
 }
 
 .section-about .col-sm-3 {
@@ -841,7 +845,7 @@ body {
 }
 
 .section-about .rectangle {
-  margin: 15px auto 10px;
+  margin: 1px auto 10px;
 }
 
 .section-about .rectangle i {
@@ -856,7 +860,7 @@ body {
 }
 
 .feature-about p {
-  margin: 30px 0 0;
+  max-width: 500px
 }
 
 @media only screen and (max-width: 767px) {
