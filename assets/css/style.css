@@ -1060,110 +1060,101 @@ body {
 /* End of Experience Section */
 
 /* Section: Skills */
-.section-skills {
-  background-color: #f6f6f6;
+
+.skills {
+  position: relative;
+  top: 10px;
+  bottom: 100px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 700px;
 }
 
-.section-skills h2 {
-  position: relative;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-  font-size: 18px;
-  color: #000;
+.container1 {
+  top: 10px;
+  bottom: 80px;
+  padding-top: 10px;
+  column-count: 1;
+}
+
+.container2 {
+  float: left;
+  /* Or right */
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container2:nth-child(odd) {
+  clear: left;
+}
+
+.skill-title {
+  bottom: 100px;
+  padding: 10px;
+  font-size: 300%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-name {
+  font: size 18px;
+  font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
-  text-align: left;
+  margin: 20px 0;
 }
 
-.section-skills h2:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 40px;
-  height: 1px;
-  background-color: #000;
+.skill-bar {
+  height: 14px;
+  background: #7e7e7e;
+  border-radius: 3px;
 }
 
-.section-skills p {
-  margin: 10px 0 0;
-}
-
-.progress-group p {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.progress-group+.progress-group {
-  margin-top: 20px;
-}
-
-.progress {
+.skill-per {
+  height: 14px;
+  background: #7b9aff;
+  border-radius: 3px;
   position: relative;
-  margin: 10px 0 0;
-  background-color: #666;
-  border-radius: 0;
-  height: 10px;
-  box-shadow: none;
-  overflow: visible;
+  animation: fillBars 5s 1;
 }
 
-.progress-bar {
-  position: relative;
-  background-color: #196fc2;
-  height: 10px;
-}
-
-.progress-bar:before {
-  content: '';
+.skill-per::before {
+  content: attr(per);
   position: absolute;
+  padding: 4px 6px;
+  background: #7b9aff;
+  border-radius: 4px;
+  font-size: 15px;
+  top: -35px;
   right: 0;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 15px 20px 15px;
-  border-color: transparent transparent #196fc2 transparent;
-  z-index: 2;
+  transform: translateX(50%);
 }
 
-.progress-bar:after {
-  content: '';
+.skill-per::after {
+  content: "";
   position: absolute;
-  right: -8px;
+  width: 9px;
+  height: 9px;
+  background: #7b9aff;
   top: -10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 15px 20px 15px;
-  border-color: transparent transparent #f6f6f6 transparent;
-  z-index: 1;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
 }
 
-.progress-bar span {
-  width: 40px !important;
-  position: absolute;
-  top: -30px;
-  right: -7px;
-  color: #000;
-  z-index: 3;
-}
 
-.progressbar-back-text {
-  display: none;
-}
-
-@media only screen and (max-width: 767px) {
-
-  /* Section: Skills */
-  .section-skills .col-sm-6+.col-sm-6 {
-    margin-top: 40px;
+@keyframes fillBars {
+  from {
+    width: 0;
   }
 
-  .section-skills h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
+  to {
+    width: 100%;
   }
 }
+
+/* End of Sills section 
 
 /* Section: Counters */
 .site-section.section-counters {
