@@ -456,7 +456,7 @@ body {
 
 .background-overlay:before {
   content: "";
-  background-color: #ffffffa2;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -466,7 +466,8 @@ body {
 }
 
 .testimonial {
-  padding: 20px 100px;
+  padding: 40px 100px;
+  background-color: #ffffffa2;
   position: relative;
 }
 
@@ -632,7 +633,7 @@ img:hover {
  * Sections
  */
 .site-section {
-  padding: 136px 0;
+  padding: 70px 0;
 }
 
 .site-section h2 {
@@ -845,27 +846,33 @@ img:hover {
   display: flex;
 }
 
-.boxy {
-  border: 2px solid #040799;
-  padding: 5px;
-  width: 500px;
-  margin: 2px;
-  border-radius: 9px;
-  background-color: #a7ccf091;
+.boxy h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
 }
 
-.column {
+.boxy {
+  border: 2px solid #040799;
+  padding: 50px;
+  width: 92%;
+  margin: auto;
+  position: relative;
+  border-radius: 20px;
+  background-color: #a7ccf091;
   flex: 1;
-  padding: 8px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 19px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 200;
   text-align: justify;
 }
 
 @media (max-width: 600px) {
-  .about-columns {
-    flex-direction: column;
+  .boxy {
+    flex-direction: boxy;
   }
 }
 
@@ -1198,9 +1205,9 @@ img:hover {
 
 /* Section: Services */
 .section-services.site-section {
-  padding: 0;
+  padding: 40px;
   background-color: #ffffff;
-  height: 1200px;
+  height: auto;
 }
 
 .section-services .container-fluid {
