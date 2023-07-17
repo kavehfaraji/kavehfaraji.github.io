@@ -444,7 +444,7 @@ body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/galaxy.webp) center no-repeat;
+  background: url(../img/galaxy.png) center no-repeat;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
