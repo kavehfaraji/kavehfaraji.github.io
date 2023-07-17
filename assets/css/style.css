@@ -451,11 +451,12 @@ body {
   display: table;
   position: relative;
   background-size: cover;
+  text-align: center;
 }
 
 .background-overlay:before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  background-color: #ffffffa2;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -464,42 +465,61 @@ body {
   z-index: 0;
 }
 
-.hero-content {
-  color: #ffffff;
-  display: table-cell;
-  vertical-align: middle;
+.testimonial {
+  padding: 20px 100px;
   position: relative;
 }
 
-.hero-content h1 {
-  width: 100%;
-  padding: 0 15px;
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto;
+.testimonial h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 800;
   text-transform: uppercase;
+  position: relative;
 }
 
-.hero-content p {
-  padding: 0 15px;
-  margin: 30px auto 0;
-  text-align: center;
-  text-transform: uppercase;
+.testimonial h1::after {
+  content: "";
+  height: 5px;
+  width: 800px;
+  background-color: #fff;
+  display: block;
+  margin: auto;
+  position: relative;
 }
 
-.hero-content .hero-job {
+.testimonial img {
+  height: 250px;
+  width: 250px;
+  border: 2px solid#fff;
+  border-radius: 50%;
+  margin-top: 30px;
+  position: relative;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition: transform 0.25s;
+}
+
+.testimonial h3 {
+  font-family: sans-serif;
   font-size: 18px;
+  margin-top: 30px;
+  text-align: justify;
+  position: relative;
 }
 
-.hero-content .hero-job span {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ffffff;
+.testimonial h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20;
+  position: relative;
 }
 
-.hero-content .hero-job-desc {
-  font-size: 14px;
-  max-width: 700px;
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: testimonial;
+  }
 }
 
 .hero-arrow {
@@ -600,18 +620,6 @@ body {
   animation-play-state: paused;
 }
 
-@media only screen and (max-width: 767px) {
-
-  /* HEADER */
-  /* HERO */
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-content p {
-    margin: 20px auto 0;
-  }
-}
 
 /* SITEMAIN
 ================================================== */
@@ -833,55 +841,36 @@ body {
 
 /* Section: About */
 
-.about_container {
+.about-columns {
   display: flex;
-  height: 430px;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
-.profile-pic img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 20px;
-  border-radius: 50%;
+.boxy {
+  border: 2px solid #040799;
+  padding: 5px;
   width: 500px;
-  float: left;
+  margin: 2px;
+  border-radius: 9px;
+  background-color: #a7ccf091;
 }
 
-.feature-about p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 20px;
-  border-radius: 50%;
-  max-width: 500px
-}
-
-.subh3 {
-  font: caption;
-  font-family: Lato;
-  font-size: 200%;
-}
-
-.about-text h2 {
-  font-size: 250%;
-  margin-top: 10px;
-  margin-bottom: 50px;
+.column {
+  flex: 1;
+  padding: 8px;
+  font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 200;
+  text-align: justify;
 }
 
-.about-text p {
-  text-align: justify;
-  font-family: Lato;
-  font-size: 140%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 50px;
-  border-radius: 50%;
+@media (max-width: 600px) {
+  .about-columns {
+    flex-direction: column;
+  }
 }
+
+
+
 
 /* Section Experience */
 
