@@ -205,4 +205,5 @@ $(function () {
     if ($('#grid').length > 0) {
         shuffleme.init(); //filter portfolio
     };
+
 }());
