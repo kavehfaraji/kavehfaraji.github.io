@@ -456,7 +456,7 @@ body {
 
 .background-overlay:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 253, 253, 0);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -467,54 +467,42 @@ body {
 
 .testimonial {
   padding: 40px 100px;
-  background-color: #ffffffa2;
+  background-color: #ffffff57;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .testimonial h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
+  color: #000;
 }
 
-.testimonial h1::after {
-  content: "";
-  height: 5px;
-  width: 800px;
-  background-color: #fff;
-  display: block;
-  margin: auto;
+.testimonial p {
+  font-size: 20px;
   position: relative;
+  color: #030303;
+  font-weight: 400;
 }
+
 
 .testimonial img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 2px solid#fff;
   border-radius: 50%;
   margin-top: 30px;
+  margin-bottom: 50px;
   position: relative;
 }
 
 .testimonial img:hover {
   transform: scale(1.2);
   transition: transform 0.25s;
-}
-
-.testimonial h3 {
-  font-family: sans-serif;
-  font-size: 18px;
-  margin-top: 30px;
-  text-align: justify;
-  position: relative;
-}
-
-.testimonial h2 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20;
-  position: relative;
 }
 
 @media (max-width: 600px) {
@@ -841,91 +829,106 @@ body {
 }
 
 /* Section: About */
-.aboutme {
-  background: url(../img/AI.jpg);
-  background-attachment: fixed;
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+}
+
+
+.back-video {
   height: 100%;
   width: 100%;
-  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.About {
+  height: 800px;
+  width: 100%;
   position: relative;
-  background-size: cover;
+  overflow: auto;
+  background-color: #bcbebe07;
+  /* to clear the float */
+}
+
+
+.video-text {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  /* add a semi-transparent background to the text */
+  color: #fff;
+  padding: 10px;
+}
+
+.video-text h1 {
+  margin-top: 60px;
   text-align: center;
-  border-bottom: 200px solid#ffffff;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
-.contact-box {
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 5px;
-  margin-bottom: 20px;
-  height: 500px;
-  border: 2px solid #040799;
-  background-color: #ffffffe1;
-  border-radius: 20px;
-  position: relative;
-  width: 300px;
-}
-
-.contact-box .info {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-  line-height: 25px;
-  font-weight: 800;
-}
-
-
-.contact-box img {
-  border: 2px solid#040799;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+.video-text p {
+  font-size: 18px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 30px;
 }
 
-.boxy1 {
-  height: 500px;
-  border: 2px solid #040799;
-  padding: 50px;
-  width: 900px;
-  position: relative;
-  border-radius: 20px;
-  background-color: #ffffffe1;
-  padding: 15px;
-  font-size: 19px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 200;
+.video-text .first-block {
+  font-size: 16px;
   text-align: justify;
-  grid-column: 2;
-  margin-left: 5px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 40px;
+.video-text .second-block {
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: justify;
+
+}
+
+.video-text h3 {
+  margin-left: 30px;
+  font-weight: bold;
+
+}
+
+.video-text li {
+  margin-left: 30px;
 }
 
 
-@media (max-width: 600px) {
-  .boxy {
-    flex-direction: boxy;
-  }
-}
 
-
-@media (max-width: 600px) {
-  .contact-box {
-    flex-direction: contact-box;
-  }
-}
 
 /* Section Experience */
 
@@ -2006,6 +2009,17 @@ main.row {
 }
 
 /* certificates Section */
+.prest {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .present {
+    flex-basis: 100%;
+  }
+}
 
 .pas {
   margin-top: 60px;
