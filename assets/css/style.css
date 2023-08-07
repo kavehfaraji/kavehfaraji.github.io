@@ -2147,6 +2147,19 @@ main.row {
   color: #196fc2;
 }
 
+/* contact me section */
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
 /* Sections background: Me */
 .section-me {
   background: url(../img/portfolio-7.jpg) center no-repeat fixed;

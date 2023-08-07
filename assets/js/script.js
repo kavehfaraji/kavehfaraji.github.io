@@ -206,4 +206,24 @@ $(function () {
         shuffleme.init(); //filter portfolio
     };
 
+
+
+    form.addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        emailjs.sendForm('service_x3ud2ku', 'template_czsve53', this)
+            .then(() => {
+                // Show success message
+                form.reset();
+            },
+                () => {
+                    // Show error message 
+                });
+
+    });
+
+
 }());
+
+
