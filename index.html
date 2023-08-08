@@ -49,6 +49,16 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--Contact me-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('cI4KWEfW2dqMp0uGC');
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -1233,6 +1243,12 @@
         <!-- End of Presentation Section -->
 
         <!-- Contact me -->
+        <div>
+            <input type="text" id="fullname" placeholder="Full Name" required /><br>
+            <input type="email" id="email_id" placeholder="Email Id" required /><br>
+            <textarea id="message" placeholder="Message" required></textarea><br>
+            <button onclick="SendMail()">Send</button>
+        </div>
         <div class="contactme" id="contactme">
             <form id="contact-form">
                 <label for="name">Name</label>
