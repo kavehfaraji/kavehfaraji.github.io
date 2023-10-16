@@ -2169,10 +2169,60 @@ main.row {
 }
 
 .section-quote4 {
-  background: url(../img/AAAA.jpg) center no-repeat fixed;
+  background: url(../img/A1.jpg) center no-repeat fixed;
 }
 
 .section-quote4 p {
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+
+.section-quote5 {
+  background: url(../img/A2.jpg) center no-repeat fixed;
+}
+
+.section-quote5 p {
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+
+.section-quote6 {
+  background: url(../img/A3.jpg) center no-repeat fixed;
+}
+
+.section-quote6 p {
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+
+.section-quote7 {
+  background: url(../img/A4.jpg) center no-repeat fixed;
+}
+
+.section-quote7 p {
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+
+.section-quote8 {
+  background: url(../img/A5.jpg) center no-repeat fixed;
+}
+
+.section-quote8 p {
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+}
+
+.section-quote9 {
+  background: url(../img/A6.jpg) center no-repeat fixed;
+}
+
+.section-quote9 p {
   margin-top: 0;
   font-family: 'Times New Roman', Times, serif;
   font-size: 36px;
